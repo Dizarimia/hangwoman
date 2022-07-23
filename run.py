@@ -31,7 +31,6 @@ def instructions():
     "Press a letter and hit enter. If it's correct it gets added to the word."
     "If your guess is wrong a part of the hangwoman image will be added."
     "Keep guessing until you get the whole word or you run out of tries")
-
     else:
         startup()
 
