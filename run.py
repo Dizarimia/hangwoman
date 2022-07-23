@@ -20,20 +20,20 @@ def instructions():
     """
     Welcome and instructions
     """
-    print("Would you like instructions to the game? Press Y for Yes and N for No.")
+    print("Would you like instructions? Press Y for Yes and N for No.")
     instruction = input()
     while instruction.upper() not in ["Y", "N"]:
-    print("Invalid input, choose between Y & N")
+        print("Invalid input, choose between Y & N")
     instruction = input()
     if instruction.upper() == "Y":
         return instructions()
-    print("To play hangwoman, what you need to do is guess the word one letter at a time."
-    "Insert a letter and hit enter. If it is correct the letter gets added to the word."
-    "If your guess is wrong a part of the hangwoman image will be added." 
+    print("To play hangwoman, you need to guess the word one letter at a time."
+    "Press a letter and hit enter. If it's correct it gets added to the word."
+    "If your guess is wrong a part of the hangwoman image will be added."
     "Keep guessing until you get the whole word or you run out of tries")
 
     else:
-        return startup()
+        startup()
 
 
 
@@ -44,7 +44,7 @@ def startup():
     while difficulty.upper() not in ["H", "E"]:
         print("Invalid input, choose between E & H")
         difficulty = input()
-    if difficulty.upper() == "H": 
+    if difficulty.upper() == "H":
         return hard_words
     else:
         return easy_words
@@ -56,6 +56,7 @@ def replay():
     image
     """
     pass
+
 
 def display_word(word):
     display = ""
@@ -71,6 +72,7 @@ def game():
     Method to contain the game loop
     """
     title()
+    instructions()
     words = startup()
     pick = random.randint(0, len(words))
     word = words[pick]
