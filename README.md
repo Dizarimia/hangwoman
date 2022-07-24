@@ -1,7 +1,7 @@
 # Table of contents
 
   ##  Plans and structure
-  ![Diagram](/workspace/hangwoman/Hangwoman diagram.jpeg.jpg)
+  ![Diagram](Hangwoman%20diagram.jpeg)
    ###   Objectives
    Make a working Hangwoman game. Complete with replay and instructions. 
    I chose to have two different wordlists, one easy and one hard. 
@@ -11,10 +11,17 @@
   
    ## Features
    ####    Welcome page
+   Welcome! Would you like instructions? Press Y for Yes and N for No.
    ####     Instructions
+   To play hangwoman, you need to guess the word one letter at a time.
+   Press a letter and hit enter. If correct it gets added to the word.
+   If your guess is wrong a part of the hangwoman image will be added.
+   Keep guessing until you get the whole word or you run out of tries.
    ####    Game
    ####     Losing message
+   Sorry! Better luck next time.
    ####     Winning message
+   WOHO! The word was: {pick}. You win!
 
    ## Testing
    ###     Python

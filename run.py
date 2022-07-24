@@ -20,17 +20,17 @@ def instructions():
     """
     Welcome and instructions
     """
-    print("Would you like instructions? Press Y for Yes and N for No.")
+    print("Welcome! Would you like instructions? Press Y for Yes and N for No.")
     instruction = input()
     while instruction.upper() not in ["Y", "N"]:
         print("Invalid input, choose between Y & N")
     instruction = input()
     if instruction.upper() == "Y":
         return instructions()
-    # print(f"To play hangwoman, you need to guess the word one letter at a time."
-    # "Press a letter and hit enter. If it's correct it gets added to the word."
-    # "If your guess is wrong a part of the hangwoman image will be added."
-    # "Keep guessing until you get the whole word or you run out of tries.")
+    print(f"To play hangwoman, you need to guess the word one letter at a time."
+          "Press a letter and hit enter. If correct it gets added to the word."
+          "If your guess is wrong a part of the hangwoman image will be added."
+          "Keep guessing until you get the whole word or you run out of tries.")
     else:
         startup()
 
@@ -66,26 +66,24 @@ while tries > 0:
 
 
 
-
-    def display_word(word, guesses):
-        display = ""
+def display_word(word, guesses):
+    display = ""
     for letter in word:
         if letter in LetGuessed:
             print(f"{letter}", end="")
         else:
             print(f"_", end="")
             wrongGuess += 1
-    print("")
-
+        print("")
     if wrongGuess == 0:
         print(f"WOHO! The word was: {pick}. You win!")
         break
 
         display = display + " " + letter
         print(display)
-    while tries > 0 and len(words) > 0:
-    else: 
-        print("Sorry! Better luck next time.")
+        while tries > 0 and len(words) > 0:
+            else:
+                print("Sorry! Better luck next time.")
 
 
 def hangman_img(tries):
