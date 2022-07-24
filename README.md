@@ -25,9 +25,12 @@
 
    ## Testing
    ###     Python
+   Tested with pep8.
    ###     Manual Testing
    ###     Bugs
+   I couldnt get it to work in time. I watched so many videos i got everything confused and scrambled. 
    ### Deployment
+   Deployed on Heroku and github.
    ### Finished product
 
    
