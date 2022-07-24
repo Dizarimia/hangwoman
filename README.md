@@ -1,7 +1,7 @@
 # Table of contents
 
   ##  Plans and structure
-  ![Diagram](Hangwoman%20diagram.jpeg)
+  ![Diagram](Hangwoman_diagram.jpeg)
    ###   Objectives
    Make a working Hangwoman game. Complete with replay and instructions. 
    I chose to have two different wordlists, one easy and one hard. 
